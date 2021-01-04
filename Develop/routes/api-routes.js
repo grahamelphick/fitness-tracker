@@ -1,9 +1,13 @@
-const Workout = require("../models/workout");
+const Workout = require("../models");
 const express = require("express");
 const app = express();
 
+// module.exports = function (app) {
+
+
 app.get("/api/workouts", (req, res) => {
-    Workout.find({})
+  console.log("got to get workouts route");
+  Workout.find({})
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
@@ -46,3 +50,5 @@ app.get("/api/workouts/range", (req, res) => {
       res.json(err);
     });
 });
+
+// }
