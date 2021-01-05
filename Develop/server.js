@@ -22,7 +22,7 @@ mongoose.connect("mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-// app.use(require("./routes/api-routes.js"));
+app.use(require("./routes/api-routes.js"));
 // app.use(require("./routes/html-routes.js"));
 
 app.get("/", (req, res) => {

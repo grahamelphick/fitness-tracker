@@ -13,11 +13,18 @@ const API = {
   async addExercise(data) {
     const id = location.search.split("=")[1];
 
-    const res = await fetch("/api/workouts/" + id, {
+    let res;
+    try {
+     res = await fetch("/api/workouts/" + id, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
     });
+    console.log("got to route");
+  } catch (err) {
+    console.log(err);
+    console.log("error");
+  }
 
     const json = await res.json();
 
