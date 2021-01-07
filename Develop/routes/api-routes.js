@@ -14,7 +14,8 @@ router.get("/api/workouts", (req, res) => {
     });
 });
 
-router.put("/workouts/:id", ({ body, params }, res) => {
+router.put("/api/workouts/:id", ({ body, params }, res) => {
+
     Workout.findByIdAndUpdate(
         params.id,
          

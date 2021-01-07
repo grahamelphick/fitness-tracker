@@ -15,12 +15,12 @@ const API = {
 
     let res;
     try {
-     res = await fetch("/api/workouts/" + id, {
+      res = await fetch("/api/workouts/" + id, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
     });
-    console.log("got to route");
+    console.log("got to route", data);
   } catch (err) {
     console.log(err);
     console.log("error");
@@ -42,7 +42,7 @@ const API = {
     return json;
   },
 
-  async getworkoutsInRange() {
+  async getWorkoutsInRange() {
     const res = await fetch(`/api/workouts/range`);
     const json = await res.json();
 
