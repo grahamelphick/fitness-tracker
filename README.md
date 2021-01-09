@@ -24,7 +24,7 @@ https://polar-ravine-19824.herokuapp.com/
 ## Screenshots
 <img src="./screenshots/last-workout.png" alt="Last workout summary">
 <img src="./screenshots/add-exercise.png" alt="Add exercise page">
-<img src="./screenshots/exercise-stats.png" alt="Exercise stats page">
+<img src="./screenshots/workout-stats.png" alt="Exercise stats page">
 
 ## Installation
 npm install
