@@ -6,6 +6,10 @@
 This application allows the user to enter their workout details, which are stored in a noSQL database and collated into a statistics page.
 
 ## Table of Contents
+* [Deployed App](#deployed-app)
+
+* [Screenshots](#screenshots)
+
 * [Installation](#installation)
 
 * [Usage](#usage)
@@ -13,6 +17,14 @@ This application allows the user to enter their workout details, which are store
 * [License](#license)
 
 * [Questions](#questions)
+
+## Deployed App
+https://polar-ravine-19824.herokuapp.com/
+
+## Screenshots
+<img src="./screenshots/last-workout.png" alt="Last workout summary">
+<img src="./screenshots/add-exercise.png" alt="Add exercise page">
+<img src="./screenshots/exercise-stats.png" alt="Exercise stats page">
 
 ## Installation
 npm install
